@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Edukasi Biotik & Abiotik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="ScrollTrigger">
+        <header>
+            <div class="flex gap-2 items-center">
+                <h1>Education<i class="fa-solid fa-paw"></i></h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#biotik">Biotik</a></li>
+                    <li><a href="#abiotik">Abiotik</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#dokumentasi">Dokumentasi</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">&#9776;</button> <!-- Menu Hamburger -->
+        </header>
+
+        <section id="biotik" class="biotik-section">
+            <div class="biotik-content">
+                <h2>Apa Itu Biotik?</h2>
+                <p>Biotik adalah komponen lingkungan yang terdiri dari makhluk hidup,
+                   seperti hewan, tumbuhan, manusia, dan mikroorganisme yang memiliki peran dalam ekosistem.
+                   Komponen biotik meliputi semua makhluk hidup seperti tumbuhan, hewan, manusia dan mikroorganisme (virus dan bakteri).</p>
+            </div>
+            <div class="biotik-image">
+                <img src="images/adopt hero-5c047def.png" alt="Gambar Kanan">
+            </div>
+        </section>
+
+        <section id="abiotik" class="abiotik-section">
+            <div class="abiotik-content">
+                <h2>Apa Itu Abiotik?</h2>
+                <p>Makhluk hidup abiotik tidak ada karena abiotik adalah istilah untuk menyebut benda-benda mati, bukan makhluk hidup.
+                   Contoh komponen abiotik adalah air, udara, tanah, bebatuan, matahari, iklim, dan lain sebagainya.
+                </p>
+            </div>
+            <div class="abiotik-image">
+                <img src="images/Untitled design.png" alt="Gambar Kanan">
+            </div>
+        </section>
+
+        <section id="game">
+            <h2>Game: Klasifikasi Makhluk Hidup</h2>
+            <p>Masukkan jumlah komponen biotik dan abiotik yang kamu temukan di sekitar!</p>
+            <form id="dataForm">
+                <div class="input-container">
+                    <div class="input-group">
+                        <label for="batu">Batu:</label>
+                        <input type="number" id="batu" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="air">Air:</label>
+                        <input type="number" id="air" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="tanah">Tanah:</label>
+                        <input type="number" id="tanah" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="udara">Udara:</label>
+                        <input type="number" id="udara" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="belalang">Belalang:</label>
+                        <input type="number" id="belalang" value="0" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="pohon">Pohon:</label>
+                        <input type="number" id="pohon" value="0" min="0">
+                    </div>
+                </div>
+            </form>
+        
+            <h3>Diagram Klasifikasi</h3>
+            <div class="chart-container">
+                <canvas id="klasifikasiChart"></canvas>
+            </div>
+        </section>
+        
+        <section id="dokumentasi">
+            <h2>Dokumentasi Kegiatan</h2>
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="images/single-green-tree-clear-sky.jpg" alt="Kegiatan 1">
+                    <button class="more-btn" onclick="showDescription('desc1')">More</button>
+                    <p class="description" id="desc1">Deskripsi kegiatan 1: Kegiatan edukasi anak-anak tentang biotik dan abiotik di lingkungan sekitar.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/adorable-kittens-with-fuzzy-hair-sitting-white-surface-with-two-guinea-pigs.jpg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Diklat-LSMK-scaled-600x337.jpg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Diklat-MKV-scaled-600x337.jpg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Diklat-MKWU-700x450.jpeg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Diklat-Pikm-700x450.jpg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Keamanan-400x245.jpeg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/Keamanan-k2-400x245.jpeg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/pesta-rakyat-desa-Sumberrejo-400x257.jpeg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/perpustakaan-1-400x266.jpeg" alt="Kegiatan 2">
+                    <button class="more-btn" onclick="showDescription('desc2')">More</button>
+                    <p class="description" id="desc2">Deskripsi kegiatan 2: Workshop tentang klasifikasi makhluk hidup menggunakan metode interaktif.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const navLinks = document.querySelector(".nav-links");
+        
+                menuToggle.addEventListener("click", function () {
+                    navLinks.classList.toggle("active");
+                });
+            });
+        </script>
+        
+        <script>
+            const ctx = document.getElementById('klasifikasiChart').getContext('2d');
+            let chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Batu', 'Air', 'Tanah', 'Udara', 'Belalang', 'Pohon'],
+                    datasets: [{
+                        label: 'Jumlah Komponen',
+                        data: [0, 0, 0, 0, 0, 0],
+                        backgroundColor: ['#FF5733', '#33A8FF', '#A833FF', '#33FF57', '#FFD700', '#008000'],
+                        borderColor: ['#C70039', '#2980B9', '#8E44AD', '#27AE60', '#F1C40F', '#145A32'],
+                        borderWidth: 1,
+                        barThickness: 50
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    }
+                }
+            });
+        
+            document.querySelectorAll("input[type='number']").forEach(input => {
+                input.addEventListener("input", updateChart);
+            });
+        
+            function updateChart() {
+                chart.data.datasets[0].data = [
+                    document.getElementById('batu').value,
+                    document.getElementById('air').value,
+                    document.getElementById('tanah').value,
+                    document.getElementById('udara').value,
+                    document.getElementById('belalang').value,
+                    document.getElementById('pohon').value
+                ];
+                chart.update();
+            }
+            document.querySelectorAll('.more-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        let desc = this.nextElementSibling;
+        desc.classList.toggle('show');
+       
+
+    });
+});
+
+
+        </script>
+        
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2025 Web Edukasi Biotik & Abiotik | Dibuat dengan ❤️ untuk anak-anak</p>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
